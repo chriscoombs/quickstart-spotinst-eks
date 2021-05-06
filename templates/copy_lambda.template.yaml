@@ -167,7 +167,7 @@ Resources:
       Handler: index.handler
       MemorySize: 128
       Role: !GetAtt 'CreateSpotinstLambdaRole.Arn'
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: 120
       Code:
         S3Bucket: !Ref 'LambdaZipsBucket'
